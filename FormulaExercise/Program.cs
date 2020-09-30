@@ -20,5 +20,10 @@ namespace FormulaExercise
 
             return x;
         }
+
+        static float[] QuadraticFormula(float a, float b)
+        {
+            return new float[] {a, b}; 
+        }
     }
 }
