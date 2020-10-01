@@ -8,6 +8,12 @@ namespace FormulaExercise
 {
     class Program
     {
+        public struct Point2
+        {
+            public float x;
+            public float y;
+        }
+
         static void Main(string[] args)
         {
             Console.WriteLine(QuadraticFormula(1,-1,-1)[0]);
@@ -42,6 +48,13 @@ namespace FormulaExercise
         static float LinearBlend(float s, float e, float t)
         {
             return s + (t *(e-s));
+        }
+
+        static float PointDistance(Point2 a, Point2 b)
+        {
+            float c;
+            c = (float)Math.Sqrt(((b.x - a.x)*(b.x-a.x)) + ((b.y-a.y)*(b.y-a.y)));
+            return c;
         }
     }
 }
