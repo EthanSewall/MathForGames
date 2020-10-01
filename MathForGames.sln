@@ -5,6 +5,13 @@ VisualStudioVersion = 16.0.30406.217
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormulaExercise", "FormulaExercise\FormulaExercise.csproj", "{B083F8C8-3EC8-4F09-93AE-E80CD1153DB8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trigonometry exercise", "Trigonometry exercise\Trigonometry exercise.csproj", "{868D0B8E-3C52-4580-9721-B1436E46E201}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B9A15E5B-80CF-433E-BBF6-8A530628D9C4}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +22,10 @@ Global
 		{B083F8C8-3EC8-4F09-93AE-E80CD1153DB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B083F8C8-3EC8-4F09-93AE-E80CD1153DB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B083F8C8-3EC8-4F09-93AE-E80CD1153DB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{868D0B8E-3C52-4580-9721-B1436E46E201}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{868D0B8E-3C52-4580-9721-B1436E46E201}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{868D0B8E-3C52-4580-9721-B1436E46E201}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{868D0B8E-3C52-4580-9721-B1436E46E201}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

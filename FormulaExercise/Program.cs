@@ -21,10 +21,16 @@ namespace FormulaExercise
             public float z;
         }
 
+        public struct Plane
+        {
+            public float a;
+            public float b;
+            public float c;
+            public float d;
+        }
+
         static void Main(string[] args)
         {
-            Console.WriteLine(QuadraticFormula(1,-1,-1)[0]);
-            Console.WriteLine(QuadraticFormula(1,-1,-1)[1]);
             Console.ReadKey();
         }
 
@@ -68,6 +74,13 @@ namespace FormulaExercise
         {
             float h;
             h = (a.x * b.x) + (a.y * b.y) + (a.z * b.z);
+            return h;
+        }
+
+        static float PlaneDist(Point3 X, Plane P)
+        {
+            float h;
+            h = ((P.a * X.x) + (P.b * X.y) + (P.c * X.z) + P.d) / (float)Math.Sqrt((P.a * P.a) + (P.b * P.b) + (P.c * P.c));
             return h;
         }
     }
