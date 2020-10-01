@@ -38,5 +38,10 @@ namespace FormulaExercise
                 return null;
             }
         }
+
+        static float LinearBlend(float s, float e, float t)
+        {
+            return s + (t *(e-s));
+        }
     }
 }
