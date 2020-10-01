@@ -14,6 +14,13 @@ namespace FormulaExercise
             public float y;
         }
 
+        public struct Point3
+        {
+            public float x;
+            public float y;
+            public float z;
+        }
+
         static void Main(string[] args)
         {
             Console.WriteLine(QuadraticFormula(1,-1,-1)[0]);
@@ -30,8 +37,8 @@ namespace FormulaExercise
 
         static float[] QuadraticFormula(float a, float b, float c)
         {
-            float root1 = 0;
-            float root2 = 0;
+            float root1;
+            float root2;
             if ((b*b) - ( 4f * a * c)> 0)
             {
                 root1 = ((b * -1f) + ((float)(Math.Sqrt((double)((b * b) - (4f * a * c)))))) /(2 * a);
@@ -55,6 +62,13 @@ namespace FormulaExercise
             float c;
             c = (float)Math.Sqrt(((b.x - a.x)*(b.x-a.x)) + ((b.y-a.y)*(b.y-a.y)));
             return c;
+        }
+
+        static float TwoPointInnerProduct(Point3 a, Point3 b)
+        {
+            float h;
+            h = (a.x * b.x) + (a.y * b.y) + (a.z * b.z);
+            return h;
         }
     }
 }
